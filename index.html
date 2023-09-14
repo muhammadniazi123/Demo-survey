@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+
+body{
+background-image:url(https://images.unsplash.com/photo-1570804439979-660b22341c20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmVhdXRpZnVsJTIwbmF0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+background-size:cover;
+background-blend-mode:multiply;
+
+color:black;
+}
+.form-design {
+  width: 700px;
+  height: 2100px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin:auto;
+  background-color:white;
+
+color:black;
+box-shadow: 10px 5px 5px red;
+}
+.height1{
+ height:5px;
+ padding:10px;
+ font-size:15px;
+ border :3px solid grey;
+}
+.height2{
+ height:5px;
+ padding:10px;
+ font-size:15px;
+ border :3px solid grey;
+}
+select {
+  width: 200px;
+  height: 32px;
+  line-height: 50px;
+ border :3px solid grey;
+padding-left:10px;
+}
+.h-text{
+font-size:50px;
+color:black;
+text-align:center;
+padding-bottom:10px;
+
+}
+.h1-text{
+font-size:40px;
+color:black;
+text-align:left;
+padding:3px;
+
+}
+
+form{
+padding-left:20px;
+padding-bottom:20px;
+padding-right:20px;
+padding-top:20px;
+color:black;
+}
+div{ 
+margin:0;
+padding:0;
+
+}
+.between{
+display:flex;
+justify-content:space-between;
+width:80%;
+}
+
+
+</style>
+<body>
+<div class="form-design">
+<h1 class="h-text">Survey Form:</h1>
+<hr style="width:70%">
+<form>
+<h2 class="h1-text">Customer Data:</h2>
+
+<div class="between">
+<div>
+<input  type="text" id="fname" class="height1" required><br>
+<lable for="fname">Enter first name</lable>
+</div>
+<div>
+<input  id="lname" type="text" class="height1" required><br>
+<lable for=lname>Enter last name</lable><br><br>
+</div>
+</div>
+
+<input  id="Address" type="text" name="Address" size="50" class="height2"  required><br>
+<lable for="Address">Enter your Address</lable><br><br>
+
+<input id="Address2" type="text" name="Address" size="50" class="height2" required><br>
+<lable for="Address2">Enter your Address line 2</lable><br><br>
+
+<input id="city" type="text" name="city" class="height1" required><br>
+<lable for="city">City</lable><br><br>
+<div class="between">
+<div>
+<select ><br> 
+<option value="   ">    </option>
+<option value="Pakistan">Pakistan</option>
+<option value="India">India</option>
+<option value="Afghanistan">Afghanistan</option>
+<option value="bangladesh">Bandgladesh</option>
+<option value="Iran">Iran</option>
+<option value="Iraq">Iraq</option>
+</select><br>
+<lable >Country</lable>
+</div>
+<div>
+<input id="zip" name="zip" class="height1"><br>
+<lable for="zip">zip<lable>
+</div>
+</div>
+<h3 class="h1-text">Contact</h3>
+
+<div class="between">
+<div>
+<input  type="number" id="phone" class="height1" required><br>
+<lable for="phone">Enter phone number</lable>
+</div>
+<div>
+<input  id="email" type="e-mail" class="height1" required><br>
+<lable for=lname>Enter Email</lable><br><br>
+</div>
+</div>
+
+<h4 class="h1-text">Personal Detail</h4>
+<input type="radio" id="male" name"gender" value="male">
+<lable for="male">male</lable><br>
+<input type="radio" id="female" name"gender" value="female">
+<lable for="female">female</lable><br>
+<input type="radio" id="other" name"gender" value="other">
+<lable for="other">other</lable>
+
+<h5 class="h1-text">Personal Detail</h5>
+
+<h6 style="font-size:15px">Rating 1:</h6>
+ <input type="radio" id="bad" name="rating1" value="bad">
+   <label for="bad">Bad</label>
+   <input type="radio" id="good" name="rating1" value="good">
+   <label for="good">Good</label>
+   <input type="radio" id="excelent" name="rating1" value="other">
+   <label for="excelent">Excelent</label>
+<br>
+<h6 style="font-size:15px">Rating 2:</h6>
+ <input type="radio" id="bad2" name="rating2" value="bad">
+ <label for="bad2">Bad</label>
+ <input type="radio" id="good2" name="rating2" value="good">
+ <label for="good2">Good</label>
+ <input type="radio" id="excelent2" name="rating2" value="excelent">
+ <label for="excelent2">Excelent</label>
+
+<br>
+ <h6 style="font-size:15px">Rating 3 :</h6>
+ <input type="radio" id="bad3" name="rating3" value="bad">
+ <label for="bad3">Bad</label>
+ <input type="radio" id="good3" name="rating3" value="good">
+ <label for="good3">Good</label>
+ <input type="radio" id="excelent3" name="rating3" value="excelent">
+ <label for="excelent3">Excelent</label>
+
+<br> 
+   <h6 style="font-size:15px">Rating 4:</h6> 
+   <input type="radio" id="bad4" name="rating4" value="bad">
+   <label for="bad">Bad</label>
+   <input type="radio" id="good4" name="rating4" value="good">
+   <label for="good4">Good</label>
+   <input type="radio" id="excelent4" name="rating4" value="excelent">
+   <label for="excelent4">Excelent</label>
+
+<br>
+<h6 style="font-size:15px">Rating 5:</h6>
+          <input type="radio" id="bad5" name="rating5" value="bad">
+          <label for="bad">Bad</label>
+          <input type="radio" id="good5" name="rating5" value="good">
+          <label for="good5">Good</label>
+          <input type="radio" id="excelent5" name="rating5" value="excelent">
+          <label for="excelent5">Excelent</label>
+
+<br>
+  <h6 style="font-size:15px">Rating 6:</h6>
+  <input type="radio" id="bad6" name="rating6" value="bad">
+  <label for="bad6">Bad</label>
+  <input type="radio" id="good6" name="rating6" value="good">
+  <label for="good">Good</label>
+  <input type="radio" id="excelent6" name="rating6" value="excelent">
+  <label for="excelent6">Excelent</label>
+
+<br>
+  <h5 style="font-size:15px">Rating 7:</h5>
+   <input type="radio" id="bad7" name="rating7" value="bad">
+   <label for="bad7">Bad</label>
+   <input type="radio" id="good7" name="rating7" value="good">
+   <label for="good7">Good</label>
+   <input type="radio" id="excelent7" name="rating7" value="excelent">
+   <label for="excelent7">Excelent</label>
+
+<br>
+<br><br>
+<button align:"center" type="button" onclick="alert('your data has been submitted')">Submit</button>
+</div>
+</div>
+<br><br>
+</body>
+</html>
